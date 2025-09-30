@@ -1,174 +1,120 @@
 <!doctype html>
-<!--
--->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Welcome to Ellis`s website!</title>
-  <meta name="description" content="This is a demo website to practice HTML.">
+  <title>My website!</title>
   <style>
-    :root{--accent:#2563eb;--bg:#0f172a;--card:#0b1220;--muted:#9ca3af;--glass:rgba(255,255,255,0.03)}
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#e6eef8; background:linear-gradient(180deg,#071026 0%, #07182a 100%); -webkit-font-smoothing:antialiased}
-    header{backdrop-filter:blur(6px); background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-bottom:1px solid rgba(255,255,255,0.03); position:sticky; top:0; z-index:30}
-    .container{max-width:1000px; margin:0 auto; padding:24px}
-
-    .nav{display:flex;gap:12px;align-items:center}
-    .brand{font-weight:700;letter-spacing:0.4px}
-    nav a{color:var(--muted); text-decoration:none; padding:8px 10px; border-radius:8px}
-    nav a:hover{color:var(--accent); background:var(--glass)}
-
-    main{padding:28px 0}
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015)); border:1px solid rgba(255,255,255,0.03); padding:18px; border-radius:14px; box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-    h1{margin:0 0 6px 0;font-size:1.6rem}
-    p.lead{margin:0;color:var(--muted)}
-
-    .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .meta .pill{background:rgba(255,255,255,0.02); color:var(--muted); padding:6px 10px;border-radius:999px;font-size:0.85rem}
-
-    section{margin-top:18px}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    pre{white-space:pre-wrap;background:#021027;padding:12px;border-radius:8px;overflow:auto;border:1px solid rgba(255,255,255,0.03);font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;font-size:0.9rem}
-
-    footer{padding:28px 0;color:var(--muted); font-size:0.9rem}
-
-    /* Responsive */
-    @media (max-width:880px){.hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr}}
-
-    /* Print-friendly */
-    @media print{body{color:#000;background:#fff} header, footer, nav{display:none} .card{box-shadow:none;border:1px solid #ddd}}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      color: #333;
+    }
+    header {
+      background: #ff6f61;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #ff6f61;
+    }
+    .fun-box {
+      background: #ffe0e9;
+      border: 2px dashed #ff6f61;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="container nav">
-      <div class="brand">What do you want to know?</div>
-      <nav style="margin-left:auto">
-        <a href="#overview">Overview</a>
-        <a href="#implementation">Implementation</a>
-        <a href="#Me!">Files</a>
-        <a href="#reflection">Reflection</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <h1>My Website! 🎉</h1>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#project">Project</a>
+      <a href="#files">Files</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <div class="hero">
-      <div class="card">
-        <h1>A small website to see what issues i have within HTML coding!</h1>
-        <p class="lead">Example text</p>
-        <div class="meta">
-          <div class="pill">Example text</div>
-          <div class="pill">Example text</div>
-          <div class="pill">Year: 2025</div>
-        </div>
+  <div class="container">
+    <section id="overview">
+      <h2>📌 Overview</h2>
+    <p>Welcome To Ellis`s website!</p>
+    </section>
 
-        <section id="overview">
-          <h2>Overview</h2>
-          <p>This project shows: requirements, chosen algorithms, design decisions, and final evaluation. Replace this text with your own project summary (aims, scope, and constraints).</p>
-        </section>
-
-        <section id="implementation">
-          <h2>Implementation</h2>
-          <p>TExample text</p>
-          <ul>
-            <li>Note CRUD (create / read / update / delete)</li>
-            <li>Tag indexing and search (simple inverted index)</li>
-            <li>Responsive UI and keyboard shortcuts</li>
-          </ul>
-
-          <h3>Important code (inverted index snippet)</h3>
-          <pre>// build inverted index from notes
+    <section id="project">
+      <h2>💻 The Project</h2>
+      <p>I also made a project called <strong>Smart Notes Manager</strong>. It’s a way to make and search notes.</p>
+      <div class="fun-box">
+        <pre>
 const buildIndex = (notes) => {
   const idx = {};
   notes.forEach((note, id) => {
     const words = note.text.toLowerCase().match(/\w+/g) || [];
     new Set(words).forEach(w => (idx[w] = idx[w] || new Set()).add(id));
   });
-  // convert sets to arrays for JSON
   return Object.fromEntries(Object.entries(idx).map(([k,s]) => [k, [...s]]));
 };
-</pre>
-        </section>
-
+        </pre>
       </div>
-
-      <aside class="card" aria-label="Project snapshot">
-        <h3>Quick demo</h3>
-        <p class="lead">Open <code>index.html</code> and try the live demo (or click the demo link if hosted).</p>
-        <div style="margin-top:12px">
-          <a href="#files" style="display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none">Download files</a>
-        </div>
-
-        <section style="margin-top:14px">
-          <h4>Assessment checklist</h4>
-          <ul>
-            <li>Requirements & success criteria — documented</li>
-            <li>Algorithm complexity explanation — included</li>
-            <li>Test cases and results — attached</li>
-            <li>Reflection & future work — written</li>
-          </ul>
-        </section>
-      </aside>
-    </div>
-
-    <div class="grid" style="margin-top:20px">
-      <div class="card" id="files">
-        <h2>Files & Links</h2>
-        <p>Place your deliverables in a folder and link them here. Example links below should be replaced with actual file URLs or relative paths.</p>
-        <ul>
-          <li><a href="#">report.pdf (replace with your report)</a></li>
-          <li><a href="#">source.zip (all source code)</a></li>
-          <li><a href="#">test-results.md</a></li>
-        </ul>
-
-        <h3>How to run locally</h3>
-        <ol>
-          <li>Unzip <code>source.zip</code> into a folder.</li>
-          <li>Open <code>index.html</code> in a modern browser, or run a simple server: <code>python -m http.server 8000</code>.</li>
-          <li>Open <code>http://localhost:8000</code> and test features.</li>
-        </ol>
-      </div>
-
-      <div class="card" id="reflection">
-        <h2>Reflection & Evaluation</h2>
-        <p>Discuss what worked, what didn't, and how performance could be improved. Include empirical timing for searches if possible and justify algorithmic choices.</p>
-
-        <h3>Limitations</h3>
-        <ul>
-          <li>Prototype only — no persistent database in this demo.</li>
-          <li>Search is case-insensitive but not stemmed (no lemmatization).</li>
-          <li>Accessibility improvements could be made (ARIA labels and focus order).</li>
-        </ul>
-      </div>
-    </div>
-
-    <section class="card" id="contact" style="margin-top:18px">
-      <h2>Contact & submission</h2>
-      <p>If you want to contact me about this coursework: <strong>YOUR.NAME@uni.ac.uk</strong></p>
-      <p style="color:var(--muted);font-size:0.9rem">Submit this folder as a zip or provide a GitHub link. Remember to include a short README with testing instructions.</p>
     </section>
 
-  </main>
+    <section id="files">
+      <h2>📂 Files</h2>
+      <p>Here are some useful bits and bobs:</p>
+      <ul>
+        <li><a href="#">My Report (PDF)</a></li>
+        <li><a href="#">Source Code (ZIP)</a></li>
+        <li><a href="#">Testing Stuff</a></li>
+      </ul>
+    </section>
 
-  <footer class="container">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-      <div>© YOUR NAME — Computer Science Coursework</div>
-      <div style="color:var(--muted)">Generated: index.html • single-file starter</div>
-    </div>
+    <section id="reflection">
+      <h2>🤔 Reflection</h2>
+      <p>So… what worked?</p>
+  </div>
+
+  <footer>
+    <p>Made by Ellis 2025</p>
   </footer>
-
-  <script>
-    // tiny helper: keyboard shortcut "n" to create a new note (demo-only)
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'n' && !e.metaKey && !e.ctrlKey) {
-        alert('Create new note — demo stub (replace with real behaviour).');
-      }
-    });
-  </script>
 </body>
 </html>
